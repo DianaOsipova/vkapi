@@ -70,7 +70,7 @@ namespace vkapi
 
             Directory.CreateDirectory(@".\pict");
             bmp.Save(@$".\pict\{groupId}.png");
-
+            Console.WriteLine("Всё успешно нарисовано");
             return @".\pict";
         }
 
