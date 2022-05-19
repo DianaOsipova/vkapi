@@ -144,15 +144,18 @@ namespace MyApp // Note: actual namespace depends on the project name.
             if(calcUsers != null)
             {
                 Dictionary<string, string> probabilities = Calc(calcUsers, 1000, 100);
-                string pathToImage = DrawingChart.DrawChart(probabilities, groupId);
+                if(probabilities != null)
+                {
+                    string pathToImage = DrawingChart.DrawChart(probabilities, groupId);
+                }
+                else
+                {
+                    Console.WriteLine("Слишком мало пользователей в группе");
+                }
                 
             }
-            
-            
 
-            Console.WriteLine(userCount);
-
-           
+            //Console.WriteLine(userCount);
 
         }
 
