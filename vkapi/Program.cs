@@ -15,8 +15,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
 
         //const string groupId = "73401175"; //25к members
-        //const string groupId = "9558750"; //11к members Галерея
-        const string groupId = "43601489"; //11к members Галерея
+        const string groupId = "9558750"; //11к members Галерея
         //const string groupId = "32169030"; //550к members neoclassic
         const int MAX_USER = 10000;
         public static void Main(string[] args)
