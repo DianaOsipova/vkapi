@@ -1,0 +1,17 @@
+# vkapi
+1) Скачать и установить VisualStudio 2022(TargetFramework net6.0), при установке выбрать пакеты .net 
+ссылка https://visualstudio.microsoft.com/ru/vs/ выбрать версия community
+2) Скачать postgreeSql - https://www.enterprisedb.com/downloads/postgres-postgresql-downloads  , установить (базовая настройка)
+проверить что работает служба postgree!
+3)Открыть проект (.sln файл), подождать пока скачаются nuget пакеты
+4) настроить vk проект, получить access_token - https://vk.com/dev.php?method=first_guide 
+5) создать базу данных - в vs 2022 открываем Package Manager Console, прописываем команду Update-Database.
+БД установлена , можно проверить открыв pgAdmin, название бд - vkapidb
+6) в классе Program прописываем свой access_token (28 строка)
+7) в классе ApplicationContext в 14 строке прописываем пароль от pgAdmin (в переменную)
+8) находим на просторах интернета id любой группы вк, можно воспользоваться этим https://regvk.com/id/ ,
+вставляем ссылку на группу, получаем её id
+9) изменяем значение переменной groupId в классе Program на полученный id из предыдущего пункта
+10) запускаем программу (F5)
+11) после сообщения в консоли переходим в ~\vkapi\vkapi\bin\Debug\net6.0\pict , и в этой папке будет лежать нужная картинка 
+с соответствующим названием - id группы vk
